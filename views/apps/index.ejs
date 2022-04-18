@@ -1,0 +1,122 @@
+
+<% include ../partials/header %>
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+<% include ../partials/sidebar%>
+        
+             <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-default">
+                <div class="page-header-content">
+                    <div class="page-title">
+                        <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Apps</h4>
+                            <a href="applist/app-created" style="float: right;margin-top: -29px;color: #ffffff"><button type="button"
+                                style="background-color: #07575C; border-color: #07575C" class="btn btn-danger btn-rounded add_btn"><i
+                                  class="icon-add position-left"></i> Add Apps</button></a>
+                    </div>
+                    
+
+                </div>
+
+                <div class="breadcrumb-line">
+                    <ul class="breadcrumb">
+                        <li><a href="/dashboard"><i class="icon-home2 position-left"></i> Home</a></li>
+                        <li class="active">Apps</li>
+                    </ul> 
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+
+                    <% if (messages.info) { %>
+                        <div class="alert alert-success"><%= messages.info %></div>
+                    <% } %>
+
+                <!-- Basic datatable -->
+                <div class="panel panel-flat">
+        
+
+                    <table class="table datatable-basic">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th> 
+                                <th scope="col">Amount</th> 
+                                <th scope="col">Status</th> 
+                                <th class="text-center">Action</th> 
+                            </tr>
+                        </thead>
+                        <tbody class="info"> 
+                  
+                        <% 
+                            let count = 1;
+                            apps.forEach((app) => { %>
+
+                            <tr>
+                                <td><%= count %></td> 
+                                <td><%= app.name %></td> 
+                                <td><%= app.amount %></td> 
+                                <td><%= (app.status == 1) ? 'Active' : 'Inactive' %></td> 
+                                <td>
+                                    <ul class="icons-list">
+                                        <li class="text-teal-600"><a href="/app/<%= app.id %>"><i class="icon-eye"></i></a></li> 
+                                        <li class="text-primary-600"><a href="/app/edit/<%= app.id %>"><i class="icon-pencil7"></i></a></li>
+                                        <li class="text-danger-600"><a id="complexConfirm" href="/app/delete/<%= app.id %>"><i class="icon-trash"></i></a></li>
+                                    </ul>
+                                </td> 
+                            </tr> 
+
+                        <% count++  }) %>         
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /basic datatable -->
+
+
+          
+
+                <!-- Footer -->
+                <% include ../partials/footer %>
+                <!-- /footer -->
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+<script>
+    $("#complexConfirm").confirm({
+        title:"Delete confirmation",
+        text:"This is very dangerous, you shouldn't do it! Are you really really sure?",
+        confirm: function(button) {
+            alert("You just confirmed.");
+        },
+        cancel: function(button) {
+            alert("You aborted the operation.");
+        },
+        confirmButton: "Yes I am",
+        cancelButton: "No"
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+{
+    "1" : {
+        "id": 1,
+        "name": "Edited Document",
+        "activityType": "Done Document",
+        "role": 2,
+        "number": 1
+    },
+    "2": {
+        "id": 2,
+        "name": "Added data for Document",
+        "activityType": "To Do Document",
+        "role": 2,
+        "number": 2
+    },
+    "3": {
+        "id": 3,
+        "name": "Started Cleaning",
+        "activityType": "Cleaning",
+        "role": 1,
+        "number": 4
+    },
+    "4": {
+        "id": 4,
+        "name": "Ended Cleaning",
+        "activityType": "Cleaning",
+        "role": 1,
+        "number": 5
+    },
+    "5": {
+        "id": 5,
+        "name": "Edited Box Code",
+        "activityType": "Cleaning",
+        "role": 1,
+        "number": 3
+    },
+    "6": {
+        "id": 6,
+        "name": "Added Account",
+        "activityType": "Accounts",
+        "role": 0,
+        "number": 22
+    },
+    "7": {
+        "id": 7,
+        "name": "Edited Account",
+        "activityType": "Accounts",
+        "role": 0,
+        "number": 23
+    },
+    "8": {
+        "id": 8,
+        "name": "Removed Account",
+        "activityType": "Accounts",
+        "role": 0,
+        "number": 24
+    },
+    "9": {
+        "id": 9,
+        "name": "Blocked/Unblocked Account",
+        "activityType": "Accounts",
+        "role": 0,
+        "number": 25
+    },
+    "10": {
+        "id": 10,
+        "name": "Added Apartment",
+        "activityType": "Apartments",
+        "role": 0,
+        "number": 17
+    },
+    "11": {
+        "id": 11,
+        "name": "Edited Apartment",
+        "activityType": "Apartments",
+        "role": 0,
+        "number": 19
+    },
+    "12": {
+        "id": 12,
+        "name": "Removed Apartment",
+        "activityType": "Apartments",
+        "role": 0,
+        "number": 18
+    },
+    "13": {
+        "id": 13,
+        "name": "Added Parking",
+        "activityType": "Apartments",
+        "role": 0,
+        "number": 26
+    },
+    "14": {
+        "id": 14,
+        "name": "Edited Parking",
+        "activityType": "Apartments",
+        "role": 0,
+        "number": 27
+    },
+    "15": {
+        "id": 15,
+        "name": "Removed Parking",
+        "activityType": "Apartments",
+        "role": 0,
+        "number": 28
+    },
+    "16": {
+        "id": 16,
+        "name": "Created Reservation",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 6
+    },
+    "17": {
+        "id": 17,
+        "name": "Edited Reservation",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 8
+    },
+    "18": {
+        "id": 18,
+        "name": "Removed Reservation",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 7
+    },
+    "19": {
+        "id": 19,
+        "name": "Check In Button",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 10
+    },
+    "20": {
+        "id": 20,
+        "name": "Check Out Button",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 11
+    },
+    "21": {
+        "id": 21,
+        "name": "Document Button",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 12
+    },
+    "22": {
+        "id": 22,
+        "name": "Payment Button",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 13
+    },
+    "23": {
+        "id": 23,
+        "name": "Instruction Button",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 14
+    },
+    "24": {
+        "id": 24,
+        "name": "Edited Box Code",
+        "activityType": "Apartments",
+        "role": 0,
+        "number": 21
+    },
+    "25": {
+        "id": 25,
+        "name": "Apartments to cleaning staff",
+        "activityType": "Cleaning Assignments",
+        "role": 0,
+        "number": 30
+    },
+    "26": {
+        "id": 26,
+        "name": "Cleaning staff to Apartments",
+        "activityType": "Cleaning Assignments",
+        "role": 0,
+        "number": 29
+    },
+    "27": {
+        "id": 27,
+        "name": "Removed Cleaning staff from Apartments",
+        "activityType": "Cleaning Assignments",
+        "role": 0,
+        "number": 31
+    },
+    "28": {
+        "id": 28,
+        "name": "Availability On/Off",
+        "activityType": "Price & Availability",
+        "role": 0,
+        "number": 15
+    },
+    "29": {
+        "id": 29,
+        "name": "Changed status from (To Clean/ Ready) to (Ready/To Clean)",
+        "activityType": "Apartments",
+        "role": 0,
+        "number": 20
+       
+    },
+    "30": {
+        "id": 30,
+        "name": "Price Changed",
+        "activityType": "Price & Availability",
+        "role": 0,
+        "number": 16
+    },
+    "31": {
+        "id": 31,
+        "name": "Sent Message",
+        "activityType": "Reservation",
+        "role": 0,
+        "number": 9
+    }
+    
+}

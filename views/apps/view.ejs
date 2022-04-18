@@ -1,0 +1,136 @@
+
+<% include ../partials/header %>
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+<% include ../partials/sidebar%>
+        
+             <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-default">
+                <div class="page-header-content">
+                    <div class="page-title">
+                        <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">App Detail</h4>
+                    </div> 
+                </div>
+
+                <div class="breadcrumb-line">
+                    <ul class="breadcrumb">
+                        <li><a href="/dashboard"><i class="icon-home2 position-left"></i> Home</a></li>
+                        <li class=""><a href="/app_listing">Apps</a></li>
+                        <li class="active">View</li>
+                    </ul>
+
+                  
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+
+
+              	<div class="row">
+                    <div class="col-md-8">
+        
+                      <!-- Basic layout-->
+                      
+                      <form action="#" class="form-horizontal">
+                        
+                        <div class="panel panel-flat">
+
+                            <div class="panel-body">
+                               
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">App Name:</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? app_details.name : '' %>
+                                    </div>
+                                </div>                      
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">Link :</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? app_details.app_link : "" %>
+                                    </div>
+                                </div>                      
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">Description :</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? app_details.description : '' %>
+                                    </div>
+                                </div>                      
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">Amount (₹) :</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? app_details.amount : "" %>
+                                    </div>
+                                </div>                      
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">Rewards Amount (₹) :</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? app_details.rewards_amount : "" %>
+                                    </div>
+                                </div>                      
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">Rewards Description :</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? app_details.rewards_description : "" %>
+                                    </div>
+                                </div>                      
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">Additional Amount (₹) :</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? app_details.additional_amount : "" %>
+                                    </div>
+                                </div>                      
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">Additional Description :</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? app_details.additional_description : "" %>
+                                    </div>
+                                </div>                      
+                                <div class="form-group">
+                                    <label class="col-lg-5 control-label">Status :</label>
+                                    <div class="col-lg-7 info ">
+                                        <%= (app_details) ? (app_details.status == 1) ? 'Active' : 'Inactive' : '' %>
+                                    </div>
+                                </div>                      
+                          </div>
+                        </div>
+                      </form>
+                      <!-- /basic layout -->
+                    
+        
+                    </div>
+        
+                  </div>
+          
+
+                 <!-- Footer -->
+                 <% include ../partials/footer %>
+
+                 <!-- /footer -->
+
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+
+</body>
+</html>

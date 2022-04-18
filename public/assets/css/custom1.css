@@ -1,0 +1,151 @@
+.table td input[type="button"] {
+
+    padding: 0 3px;
+    font-size: 12px;
+
+}
+.panel-title.USERS3 {
+
+    margin: 0 0 19px;
+    float: left;
+
+}
+
+/* .form-control{
+    color:#20329B;
+} */
+
+
+
+.info{
+    color: #07575C;
+}
+
+.breadcrumb > li > a{
+    color:#07575C;
+}
+.breadcrumb > .active {
+    color: #999C9F;
+}
+label {
+ 
+    font-weight: 500;
+}
+
+.navigation > li.active > a, .navigation > li.active > a:hover, .navigation > li.active > a:focus {
+    /* background: linear-gradient(to bottom, #205C21 0%, #540A3A 100%); */
+    background-color: #064E52;
+    color: #fff;
+}
+.col-sm-12.box_content.gr {
+	padding-left: 14px;
+}
+ 
+.btn.btn-info.ADD2.pull-right {
+
+    margin: 0 0 10px;
+
+}
+.add_btn{
+
+    background-color: #20329B;
+    margin-right: 10px
+
+}
+.gr .col-sm-9 canvas {
+
+    width: 96% !important;
+    background: #fff;
+    padding: 12px 20px;
+    height: 349px !important;
+
+}
+.panel.panel-flat {
+
+    float: left;
+    width: 100%;
+
+}
+.panel-heading {
+
+    float: left;
+    width: 100%;
+    padding: 0;
+
+}
+.dataTables_filter {
+
+    position: relative;
+    display: block;
+    float: left;
+    margin: 20px 20px 20px 20px;
+
+}
+.dataTables_length {
+
+    float: right;
+    display: inline-block;
+    margin: 25px 0 20px 20px;
+
+}
+.dataTables_info {
+
+    float: left;
+    padding: 0 10px;
+        padding-top: 0px;
+    margin-bottom: 20px;
+
+}
+.table-responsive {
+
+    float: left;
+    width: 100%;
+
+}
+.im img {
+
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    height: 70px;
+    width: 70px;
+
+}.navbar-brand span {
+    padding: 1px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+.navbar-brand > img {
+    margin-top: 2px;
+    width: 27px;
+    height: auto;
+    float: left;
+}.navbar-inverse .navbar-brand {
+    color: #fff;
+    float: left;
+    width: 100%;
+}
+.sidebar.sidebar-main {
+	transition: all ease 0.2s;
+}
+.sidebar.sidebar-main.main{
+
+   
+    width: 69px;
+
+}
+.navigation.navigation-main.navigation-accordion li a {
+	font-size: 14px;
+	transition: all ease 0.2s;
+}
+.main .navigation.navigation-main.navigation-accordion li a {
+	font-size: 0;
+}
+/* .content{
+    background: url(http://localhost/saye/public/assets/images/bg.png);
+    height: auto;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+} */

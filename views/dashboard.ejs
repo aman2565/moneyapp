@@ -1,0 +1,194 @@
+
+<% include ./partials/header %>
+
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+    <% include ./partials/sidebar%>
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <!-- Page header -->
+                <div class="page-header page-header-default">
+                    <div class="page-header-content">
+                        <div class="page-title">
+                            <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Home</span> - Dashboard</h4>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+                <!-- /page header -->
+
+
+                <!-- Content area -->
+                <div class="content">
+
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+									
+                            <!-- Members online -->
+                            <div class="panel bg-teal-400" class="icon-user">
+                                <a href="/users"   style="color: #fff" ><div class="panel-body">
+                                        <div class="heading-elements">
+                                                <span class="heading-text badge bg-teal-600"><i class="fas fa-users fa-4x"></i></span>
+                                            </div>
+                                
+                                    <h3 class="no-margin"><i class="fas fa-users"></i> <%= user_count %></h3>
+                                    Users
+                                    <div class="text-muted text-size-small">
+                                        <svg width="181.109375" height="50"><g width="181.109375"><rect class="d3-random-bars" width="5.217142489711933" x="2.235918209876543" height="50" y="0" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="9.68897890946502" height="32.5" y="17.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="17.142039609053498" height="42.5" y="7.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="24.595100308641975" height="27.500000000000004" y="22.499999999999996" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="32.04816100823045" height="45" y="5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="39.50122170781893" height="40" y="10" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="46.954282407407405" height="25" y="25" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="54.40734310699588" height="30" y="20" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="61.86040380658436" height="27.500000000000004" y="22.499999999999996" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="69.31346450617283" height="35" y="15" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="76.76652520576131" height="37.5" y="12.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="84.21958590534979" height="40" y="10" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="91.67264660493827" height="47.5" y="2.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="99.12570730452674" height="37.5" y="12.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="106.57876800411522" height="30" y="20" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="114.0318287037037" height="27.500000000000004" y="22.499999999999996" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="121.48488940329217" height="35" y="15" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="128.93795010288065" height="37.5" y="12.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="136.3910108024691" height="30" y="20" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="143.84407150205757" height="47.5" y="2.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="151.29713220164606" height="27.500000000000004" y="22.499999999999996" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="158.75019290123456" height="37.5" y="12.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="166.20325360082302" height="32.5" y="17.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="173.65631430041148" height="30" y="20" style="fill: rgba(255, 255, 255, 0.5);"></rect></g></svg>
+                                    </div>
+                                </div></a>
+
+                                <div class="container-fluid">
+                                    <div id="members-online"></div>
+                                </div>
+                            </div>
+                            <!-- /members online --> 
+
+                        </div>
+                        <div class="col-lg-6">
+                              <!-- Members online -->
+                              <div class="panel bg-teal-400" class="icon-user">
+                                <a href="/app_listing"   style="color: #fff" ><div class="panel-body">
+                                        <div class="heading-elements">
+                                                <span class="heading-text badge bg-teal-600"><i class="fab fa-app-store fa-4x"></i></span>
+                                            </div>
+                                
+                                    <h3 class="no-margin"><i class="fab fa-app-store"></i> <%= apps_count %></h3>
+                                    Apps
+                                    <div class="text-muted text-size-small">
+                                        <svg width="181.109375" height="50"><g width="181.109375"><rect class="d3-random-bars" width="5.217142489711933" x="2.235918209876543" height="50" y="0" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="9.68897890946502" height="32.5" y="17.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="17.142039609053498" height="42.5" y="7.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="24.595100308641975" height="27.500000000000004" y="22.499999999999996" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="32.04816100823045" height="45" y="5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="39.50122170781893" height="40" y="10" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="46.954282407407405" height="25" y="25" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="54.40734310699588" height="30" y="20" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="61.86040380658436" height="27.500000000000004" y="22.499999999999996" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="69.31346450617283" height="35" y="15" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="76.76652520576131" height="37.5" y="12.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="84.21958590534979" height="40" y="10" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="91.67264660493827" height="47.5" y="2.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="99.12570730452674" height="37.5" y="12.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="106.57876800411522" height="30" y="20" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="114.0318287037037" height="27.500000000000004" y="22.499999999999996" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="121.48488940329217" height="35" y="15" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="128.93795010288065" height="37.5" y="12.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="136.3910108024691" height="30" y="20" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="143.84407150205757" height="47.5" y="2.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="151.29713220164606" height="27.500000000000004" y="22.499999999999996" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="158.75019290123456" height="37.5" y="12.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="166.20325360082302" height="32.5" y="17.5" style="fill: rgba(255, 255, 255, 0.5);"></rect><rect class="d3-random-bars" width="5.217142489711933" x="173.65631430041148" height="30" y="20" style="fill: rgba(255, 255, 255, 0.5);"></rect></g></svg>
+                                    </div>
+                                </div></a>
+
+                                <div class="container-fluid">
+                                    <div id="members-online"></div>
+                                </div>
+                            </div>
+                            <!-- /members online -->
+                        </div>
+                    </div>
+
+                  <div class="row">
+                        
+                  <div class="col-md-12">
+
+                  <canvas id="myChart" class="chartjs" width="770" height="200px" style="display: block; width: 770px; height: 385px;"></canvas>
+                  </div>
+
+                  
+                </div>
+                    <!-- Footer -->
+                    <% include ./partials/footer %>
+
+                    <!-- /footer -->
+
+                </div>
+                <!-- /content area -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /page content -->
+
+    </div>
+    <!-- /page container -->
+
+    <script>
+       
+$.ajax({
+      type: "GET",
+      url: "/users_sign_up",
+
+      success: function (response) {
+          console.log(response[0]);
+  
+          abc(response);
+        
+      }, error(error) {
+        console.error(error);
+      }
+
+    });
+
+    function abc(data){
+
+
+    let ctx1 = document.getElementById('myChart').getContext('2d');
+    mixedChart = new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels:data[0],
+        datasets: [{
+          label: "New Users Per Month",
+          backgroundColor: "#07575C",
+          data: data[1],
+          type: 'bar',
+          fill: true,
+        }],
+      },
+      options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+    });
+}
+            // var ctx = document.getElementById('myChart').getContext('2d');
+            // var myChart = new Chart(ctx, {
+            //     type: 'bar',
+            //     data: {
+            //         labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+            //         datasets: [{
+            //             label: '# of Users',
+            //             data: [12, 19, 3, 5, 2, 3,4,10,20],
+            //             backgroundColor: [
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+            //                 '#FF1F75',
+                           
+            //             ],
+            //             borderColor: [
+            //                 '#FF1F75'
+                            
+            //             ],
+            //             borderWidth: 1
+            //         }]
+            //     },
+            //     options: {
+            //         scales: {
+            //             yAxes: [{
+            //                 ticks: {
+            //                     beginAtZero: true
+            //                 }
+            //             }]
+            //         }
+            //     }
+            // });
+
+            
+            </script>
+</body>
+</html>

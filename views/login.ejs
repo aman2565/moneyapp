@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./partials/head.ejs %>
+<style>
+.bg{
+    background: url(/assets/images/bg.png);
+    height: auto;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bb{
+    background: rgba(7, 87, 92, .2);
+    border: none;
+    border-radius: 10px;
+    
+}
+
+input[type="text"]
+{
+    border-radius: 20px;
+}
+
+input[type="password"]
+{
+    border-radius: 20px;
+}
+input:focus{
+border-bottom:1px solid #fff !important;
+}
+.headr_on img {
+    width: 120px;
+}
+.headr_on {
+    background: #07575C;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+</style>
+<body class="login-container bg">
+
+    <div class="headr_on">
+            <img src="/assets/images/logo.png">
+    </div>
+
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <!-- Content area -->
+                <div class="content">
+
+                    <!-- Simple login form -->
+                    <form action="login" method="post">
+                        <div class="panel panel-body login-form bb" style=" margin-top: 150px;">
+                            <div class="text-center">
+                                
+                                <!-- <h5 class="content-group" style="color: #ffffff" style="font-weight: 30px">SAYE </h5> -->
+                                <h5 class="content-group" style="color: #ffffff">Login to admin panel </h5>
+                            </div>
+
+                            <div class="form-group has-feedback has-feedback-left">
+                                <input type="text" name="username" required="required" class="form-control" placeholder="Email">
+                                <div class="form-control-feedback">
+                                    <i class="icon-envelop text-muted" style="color:#07575C"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback has-feedback-left">
+                                <input type="password" name="password" required="required" class="form-control" placeholder="Password">
+                                <div class="form-control-feedback">
+                                    <i class="icon-lock2 text-muted" style="color:#07575C"></i>
+                                </div>
+                            </div>
+                            <span style="color: red">
+                                
+                                <% if (message != '') { %>
+                                    <p class="text-center text-danger"><%= message %></p>
+                                <% } %>
+                            
+                            </span>
+                            <div class="form-group">
+                                <button type="submit" style="background-color:#07575C; border-color: #07575C; color:#fff; font-size: 15px;
+                                " class="btn btn-primary btn-block btn-rounded">Sign in <i class="icon-circle-right2 position-right"></i></button>
+                            </div>
+
+                            <!-- <div class="text-center">
+                                <a href="login_password_recover.html">Forgot password?</a>
+                            </div> -->
+                        </div>
+                    </form>
+                    <!-- /simple login form -->
+
+
+                    <!-- Footer -->
+                   
+                    <span class="text-center"><!-- Footer -->
+                        <div class="footer text-muted" style="color:#fff">
+                            &copy; 2019. <span   class="">Easycome</span> by <span target="_blank"  class="">Cqlsys</span>
+                        </div>
+                       <!-- /footer -->
+                       <script>
+                              setTimeout(() => {
+                              $(".alert").fadeOut('slow');
+                             },2000);
+                          </script>
+                      <span>
+
+                    <!-- /footer -->
+
+                </div>
+                <!-- /content area -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /page content -->
+
+    </div>
+    <!-- /page container -->
+
+</body>
+</html>

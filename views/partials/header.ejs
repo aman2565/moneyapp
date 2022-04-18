@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <% include ./head %>
+     <style>
+         #navlist :hover { background-color:#064E53; }
+     </style>
+
+</head>
+
+<body>
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse" style="background-color: #07575C">
+        <div class="navbar-header">
+                <a class="navbar-brand" href="/dashboard">
+                    <img src="/assets/images/fav.png" alt="" style="margin-top: -7px;" height="50px" width= "50px" > 
+                   <span>Money App
+                  </span> 
+                  
+              </a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav">
+                <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+
+                
+            </ul>
+
+            <!-- <p class="navbar-text"><span class="label bg-success">Online</span></p> -->
+
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <span>Admin</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right" id= "navlist" style="background:#07575c">
+                   
+                        <li><a style="color:#fff" href="/change_password"><i class="icon-lock"></i> Change Password</a></li>
+                        <li><a style="color:#fff" href="/logout"><i class="icon-switch2"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->

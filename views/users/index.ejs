@@ -1,0 +1,107 @@
+
+<% include ../partials/header %>
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+<% include ../partials/sidebar%>
+        
+             <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-default">
+                <div class="page-header-content">
+                    <div class="page-title">
+                        <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Users</h4> 
+                    </div>
+                    
+
+                </div>
+
+                <div class="breadcrumb-line">
+                    <ul class="breadcrumb">
+                        <li><a href="/dashboard"><i class="icon-home2 position-left"></i> Home</a></li>
+                        <li class="active">Users</li>
+                    </ul> 
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+
+                    <% if (messages.info) { %>
+                        <div class="alert alert-success"><%= messages.info %></div>
+                    <% } %>
+
+                <!-- Basic datatable -->
+                <div class="panel panel-flat">
+        
+
+                    <table class="table datatable-basic">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Device Type</th> 
+                                <th class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="info"> 
+                  
+                   <% 
+                   let count = 1;
+                   users.forEach((user) => { %>
+
+                    <tr>
+                        <td><%= count %></td> 
+                        <td><%= user.name %></td>
+                        <td><%= user.email %></td>
+                        <td><%= user.country_code+' '+user.phone_number %></td>
+                        <td><%= (user.device_type == 1) ? 'IOS' : 'Andriod' %></td>  
+                        <td>
+                            <ul class="icons-list">
+                                <li class="text-teal-600"><a href="/users/<%= user.id %>"><i class="icon-eye"></i></a></li> 
+                            </ul>
+                        </td> 
+                    </tr>
+
+
+          <% count++  }) %>         
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /basic datatable -->
+
+
+          
+
+                <!-- Footer -->
+                <% include ../partials/footer %>
+                <!-- /footer -->
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+
+
+
+</body>
+</html>
